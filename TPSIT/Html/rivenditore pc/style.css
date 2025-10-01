@@ -178,3 +178,10 @@ footer {
     align-items: center;
     }
 }
+
+.offertona {    
+    .price {
+        color: red;
+        font-weight: bold;
+    }
+}
