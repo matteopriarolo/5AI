@@ -50,21 +50,21 @@
                 <h1>Registrazione</h1>
                 <fieldset>
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
 
                     <label for="cognome">Cognome</label>
-                    <input type="text" id="cognome" name="cognome">
+                    <input type="text" id="cognome" name="cognome" required>
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                     <p id="em-error" class="error" style="display: none;" ></p>
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                     <p id="pw-error" class="error" style="display: none;"></p>
 
                     <label for="confermapsw">Conferma password</label>
-                    <input type="password" id="confermapsw" name="confermapsw" >
+                    <input type="password" id="confermapsw" name="confermapsw" required>
                     <p id="cPw-error" class="error" style="display: none;"></p>
 
                     <button type="submit" id="invia" >Invia</button>
@@ -135,7 +135,7 @@
         pw2.addEventListener('input', checkMatch);
 
         form.addEventListener('submit', function(e){
-            if (!checkMatch() || !checkEmail()){
+            if (!checkMatch() || !checkEmail() || !checkLength()){
                 e.preventDefault();
                 pw2.focus();
                 return;
