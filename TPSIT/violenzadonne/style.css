@@ -1,0 +1,209 @@
+:root {
+    --color-red: red;
+    --color-white: white;
+    --accent: #ff8a00;
+    --muted-white: rgba(255,255,255,0.95);
+    --glass: rgba(255,255,255,0.06);
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: var(--color-white);
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+    radial-gradient(8rem 6rem at 10% 15%, rgba(255, 136, 0, 0.726) 0%, rgba(255, 157, 44, 0.781) 30%, transparent 60%),
+        radial-gradient(6rem 5rem at 75% 25%, rgba(255, 145, 0, 0.808) 0%, rgba(255,0,0,0.08) 40%, transparent 70%),
+        radial-gradient(9rem 7rem at 40% 80%, rgba(255, 153, 0, 0.651) 0%, rgba(255, 0, 0, 0.658) 35%, transparent 65%),
+        linear-gradient(rgb(143, 0, 0),rgb(173, 0, 0));
+        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+/* 
+    background-color: red; */
+
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+color: var(--muted-white);
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+
+header {
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    width: 100%;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    gap: 0.5rem;
+
+    padding: 10px;
+}
+    header ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        gap: 20px;
+    }
+        header ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+/* Nuovi stili aggiunti */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+main {
+    position: relative;
+    top: 125px;
+}
+
+
+    header h1 {
+        margin: 0;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+        color: var(--muted-white);
+    }
+
+    /* Nav */
+    header ul {
+        padding: 0;
+        margin-top: 0.6rem;
+        gap: 18px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header ul li a {
+        display: inline-block;
+        padding: 0.45rem 0.8rem;
+        border-radius: 8px;
+        transition: transform .18s ease, background-color .18s ease, color .18s ease;
+        color: var(--muted-white);
+        background: transparent;
+        font-weight: 600;
+        letter-spacing: .2px;
+    }
+
+    header ul li a:hover,
+    header ul li a:focus {
+        background: rgba(255,255,255,0.04);
+        transform: translateY(-3px);
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+
+h1, h2,h3 {
+    color: var(--muted-white);
+    text-shadow: 0 3px 18px rgba(0,0,0,0.5);
+}
+
+main .container > .container h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+main .container > .container h3 {
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Cards leggermente trasparenti per adattarsi al background */
+.card {
+    background: rgba(0,0,0,0.35);
+    border: none;
+    color: var(--muted-white);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+/* Blockquote */
+blockquote.blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    color: rgba(255,255,255,0.95);
+    background: linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: .6rem 0;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(255,255,255,0.03);
+    font-size: .95rem;
+
+    backdrop-filter: blur(5px);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+}
+
+/* Piccole migliorie ai link interni */
+a {
+    color: var(--accent);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive: menu verticale su schermi stretti */
+@media (max-width: 600px) {
+    header.center {
+        padding: 1rem;
+    }
+    header.center h1 {
+        font-size: 1.3rem;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    header ul li a {
+        width: 100%;
+        text-align: center;
+        padding: .6rem;
+    }
+}
+
+
