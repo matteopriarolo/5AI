@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="stile2.xsl"?>
+<biblioteca>
+	<libro>
+		<titolo>Informatica</titolo>
+		<autore>Mario Rossi</autore>
+		<prezzo>25</prezzo>
+	</libro>
+	<libro>
+		<titolo>Geometria</titolo>
+		<autore>Pluto</autore>
+		<prezzo>26</prezzo>
+	</libro>
+</biblioteca>

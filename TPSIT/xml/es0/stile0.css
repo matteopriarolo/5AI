@@ -1,0 +1,17 @@
+libro {
+  font-family: Arial;
+}
+
+titolo {
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+autore {
+  color: green;
+}
+
+prezzo {
+  color: red;
+}
