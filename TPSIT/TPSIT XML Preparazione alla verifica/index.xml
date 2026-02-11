@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<?xml-stylesheet href="file.css" type="text/css"?>
+<?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<campionato>
+    <girone>
+        <squadra>
+            <giocatore>
+                Tessaro Nicolò
+            </giocatore>
+        </squadra>
+    </girone>
+</campionato>
