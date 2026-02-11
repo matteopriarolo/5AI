@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+Interventi {
+    display: block;
+    margin-top: 20px;
+}
+
+Intervento {
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+Intervento h3 {
+    color: #007BFF;
+}
+
+Comune, Provincia, Regione, CodiceIntervento, TipoIntervento, Descrizione, ImportoFinanziato, FaseAttuazione {
+    display: block;
+    margin-bottom: 5px;
+}
+
+Comune, Provincia, Regione {
+    font-weight: bold;
+}
+
+ImportoFinanziato {
+    color: #228B22;
+}
+
+FaseAttuazione {
+    font-style: italic;
+}
