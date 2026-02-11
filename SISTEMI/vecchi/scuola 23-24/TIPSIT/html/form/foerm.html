@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+    <head>
+        <title>Form</title>
+
+        <link  rel="stylesheet" href="style.css">
+
+        <meta charset="utf-8">
+        <meta name="author" content="Matteo Priarolo">
+        <meta name="description" content="">
+        <meta name="vewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>pagina web con form</h1>
+        </header>
+
+
+        <form method="get" action="ciao.html" target="" autocomplete="off">
+            <!-- 
+                sotto al form:
+                    method = attributo che consente di inviare le informazioni al server
+                        GET  = pagina di risposta e i dati inviati in un unico step vedendo i dati nel URL e sono visibili
+                        POST = non ci sono informazioni scritte nell? URL ma restituisce comuqnue la pagina
+
+                    action = chi elabora i dati? (php)
+                
+                    <fielset> = cornice al form
+                    <legend> = testo
+                    
+                    ---- I VARI INPUT -------
+                    <input> =   type =  text (testo) (limite caratteri con con maxlegth -> attributo (lunghezza massima))
+                                        radio (selezione binaria con il pallino) -> bisogna mettere lo stesso nome perche senno fa la selezione multipla
+                                        
+                                        data (valendario)
+                                        password (password)
+                                        checkbox (selezione multipla)
+
+                                        bottoni 
+                                        submit (bottone di invio)
+                                        button onClick="alert("ciao!")" (semplice bottone che manda un allert)
+                                        reset (resetta il form)
+
+
+
+
+
+                                name = nome della casella
+
+                    <select> = selezione 
+                                value = ".." (nome che deve apparire nella selezione)
+                            
+                        <option> = opzioni della selezione -> value="..."
+
+                    
+
+                elementi:
+                    input = input (type = text, cheeckbox, password, button, reset, submit, radio)
+                    select = selezione 
+                    text area = testo
+            -->
+            
+            <input type="text">
+
+            
+            
+            <fieldset>
+                <legend>
+                    <h1>Dati anagrafici</h1>
+                </legend>
+
+            
+                    inserisci il nome
+                <input style="width: 100%;" type="text" name="nome" >
+                    inserisci il cognome
+                <input style="width: 100%;" type="text" name="cognome" >
+                
+                
+                <br>sesso <br>
+                <input type="radio" name="sesso" value="femmina"> maschio 
+                <br>
+                <input type="radio" name="sesso" value="maschio"> femmina
+                <br><br>
+                
+
+
+                inserisci la password <br>
+                <input type="password" name="password" value="password"> <br><br><br>
+
+
+                <fieldset>
+                    checkbox
+
+                    <input type="checkbox" name="aereo">aereo
+                    <input type="checkbox" name="moto">moto
+                    <input type="checkbox" name="macchina">macchina
+                </fieldset>
+
+                <fieldset>
+                    selezione 
+
+                    <select name="selezione 1" value="Italia" id="">
+                        <option value="ciao"> seleziona la classe</option>
+                    </select>
+
+                </fieldset>
+                
+                <fielset style="margin-top: 100px;">
+
+                    textarea
+                    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                </fielset>
+
+
+
+
+            </fieldset>
+
+            <!-- bottone submit -->
+            <input type="submit" > 
+            <input type="button" value="helloButton" onclick="alert('Ciao!')">  
+            <input type="reset"> 
+
+        </form>
+
+
+    </body>
+
+</html>

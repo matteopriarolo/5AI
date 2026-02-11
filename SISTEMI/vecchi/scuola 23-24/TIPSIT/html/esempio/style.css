@@ -1,0 +1,41 @@
+*{ margin: 0; padding: 0; }
+
+header{
+    border: solid red 2px;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+    header h1{   
+        font-size: 30px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+
+nav { 
+    border: solid red 2px; 
+    height: 100%;   
+    display: inline;
+}
+
+aside{
+    border: solid red 2px; 
+    height: 100%; 
+}
+
+
+section {
+    border: solid red 2px; 
+    height: 100%; 
+    width: 50%;
+}
+    article{
+        border: solid rgb(255, 208, 0) 2px;
+        height: 100%; 
+    }
+
+footer{
+    border: solid red 2px;
+    height: 100%;
+}

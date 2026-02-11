@@ -1,0 +1,19 @@
+table tr td{
+    min-width: 150px;
+}
+
+table img {
+    width: 200px;
+}
+
+
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+legend {
+    width: auto; padding-left: 10px;
+}
